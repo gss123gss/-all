@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes charge {
+        0%{
+        background-color: red;
+        height:0px;
+        }
+        20%{
+        background-color:green;
+        height:11px;
+        }
+        80%{
+        background-color:gold;
+        height:17px;
+        }
+        100%{
+        background-color: yellow;
+        height:23px;
+        }
+        }
+        .charging{
+        animation: charge 4s linear infinite;
+
+        }
+        #star{
+            width:270px;
+            height:440px;
+
+            margin:0 auto;
+            position: relative;
+
+        }
+        #first{
+            width:270px;
+            height:30px;
+            /*background-color:#3EA1FD ;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #f1{
+            width:110px;
+            height:20px;
+
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+        #f2{
+            width:20px;
+            height:20px;
+
+            position: absolute;
+            right:4px;
+            top:0px;
+            font-size: 14px;
+            color: white;
+
+
+
+        }
+        #x1{
+            width:3px;
+            height:25%;
+            background-color: white;
+
+            position: absolute;
+            left:5px;
+            top:15px;
+        }
+        #x2{
+            width:3px;
+            height:50%;
+            background-color: white;
+            position: absolute;
+            left:10px;
+            top:10px;
+        }
+        #x3{
+            width:3px;
+            height:75%;
+            background-color: white;
+            position: absolute;
+            left:15px;
+            top:5px;
+        }
+        #x4{
+            width:3px;
+            height:100%;
+            background-color: gray;
+            position: absolute;
+            left:20px;
+            top:0px;
+        }
+        #f4{
+            width:60px;
+            height:20px;
+            position: absolute;
+            left:215px;
+
+        }
+        #battary{
+            width:12px;
+            height:23px;
+            background-color: white;
+            position: absolute;
+            right:15px;
+            top:0px;
+            display: flex;
+            flex-flow: column-reverse;
+            display: flex;
+        ;
+        }
+
+        #batta{
+            width:10px;
+            height:15px;
+            position: absolute;
+            right:1px;
+            top:1px;
+            background-color: greenyellow;
+
+
+        }
+        .batt{
+            width:8px;
+            height:3px;
+            background-color: white;
+            position:absolute;
+            right:17px;
+            top:-2px;
+        }
+
+        #f3{
+            width:40px;
+            height:20px;
+
+            position: absolute;
+
+            left:120px;
+            color: white;
+
+        }
+        #second{
+            width:270px;
+            height:35px;
+            /*background-color:#3EA1FD;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #h1{
+            width:30px;
+            height:30px;
+
+            background-image: url(01.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+        #h2{
+            width:60px;
+            height:40px;
+
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: 微软雅黑;
+        }
+        #h3{
+            width:36px;
+            height:40px;
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: 微软雅黑;
+
+        }
+        #jian{
+            width:270px;
+            height:65px;
+            background: linear-gradient(#3075BD,#4196F5,#3FA1FE);
+        }
+        #sou{
+            width:270px;
+            height:90px;
+
+
+        }
+        #sousuo{
+            width:220px;
+            height:30px;
+            background-color: white;
+            position: relative;
+            margin-bottom: 4px;
+
+        }
+        #wenzi{
+            width:200px;
+            height:20px;
+
+            position: absolute;
+            top:6px;
+            left:60px;color: gray;
+            font-size: 10px;
+        }
+        #tubiao{
+            width:20px;
+            height:20px;
+           background-image: url(22.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:6px;
+            left:38px;
+        }
+        #tu{
+            width:270px;
+            height:50px;
+
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+
+        }
+        #tu1{
+            width:35px;
+            height:35px;
+            background-image: url(23.png);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        #tu4{
+            width:22px;
+            height:22px;
+            background-image: url(27.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position:absolute;
+            top:8px;
+            left:23px;
+        }
+        #quan{
+            width:8px;
+            height:8px;
+            background-color: #F74C31;
+            position: absolute;
+            top:2px;
+            left:43px;
+            border-radius: 50%;
+        }
+        #tu2{
+         width:35px;
+            height:35px;
+            background-image: url(28.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #tu3{
+            width:35px;
+            height:35px;
+            background-image: url(25.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #zi{
+            width:270px;
+            height:20px;
+            position: absolute;
+            top:34px;
+
+        }
+        #z1{
+            width:50px;
+            height:15px;
+            position:absolute;
+            top:3px;
+            left:21px;
+            font-size: 10px;
+        }
+        #z2{
+            width:50px;
+            height:15px;
+            position:absolute;
+            top:3px;
+            left:202px;
+            font-size: 10px;
+        }
+        #z3{
+            width:50px;
+            height:15px;
+            position:absolute;
+            top:3px;
+            left:110px;
+            font-size: 10px;
+            text-align: center;
+        }
+        #kong{
+            width:270px;
+            height:18px;
+            background-color:#F8F8FA;
+        }
+        #henduo{
+            width:270px;
+            height:320px;
+            position: relative;
+        }
+        .sub{
+            width:270px;
+            height:40px;
+
+        }
+        #s1{
+            position: absolute;
+            top:0px;
+
+        }
+        #t1{
+            width:25px;
+            height:25px;
+            background-image: url(62.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:5px;
+            left:3px;
+
+        }
+        #t2{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:7px;
+            left:35px;
+
+
+        }
+        #t3{
+            width:40px;
+            height:25px;
+            font-size: 16px;
+
+        }
+        #t4{
+            width:20px;
+            height: 20px;
+            position: absolute;
+            left:243px;
+            top:9px;
+            background-image: url(17.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #s2{
+            position: relative;
+            top:-287px;
+        }
+        #t5{
+            width:25px;
+            height:25px;
+            background-image: url(63.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t6{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t7{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t8{
+            width:20px;
+            height: 20px;
+           background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:243px;
+            top:10px;
+        }
+        #s3{
+            position: relative;
+            top:-287px;
+             }
+        #t9{
+            width:25px;
+            height:25px;
+            background-image: url(64.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t10{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t11{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t12{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+        #s4{
+            position: relative;
+            top:-287px;
+        }
+        #t13{
+            width:25px;
+            height:25px;
+            background-image: url(65.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t14{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t15{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t16{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+        #s5{
+            position: relative;
+            top:-287px;
+        }
+        #t17{
+            width:25px;
+            height:25px;
+            background-image: url(66.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t18{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t19{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t20{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+        #s6{
+            position: relative;
+            top:-287px;
+        }
+        #t21{
+            width:25px;
+            height:25px;
+            background-image: url(67.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t22{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t23{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t24{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+        #s7{
+            position: relative;
+            top:-287px;
+        }
+        #t25{
+            width:25px;
+            height:25px;
+            background-image: url(68.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t26{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t27{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t28{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+        #s8{
+            position: relative;
+            top:-287px;
+        }
+        #t29{
+            width:25px;
+            height:25px;
+            background-image: url(69.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t30{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t31{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t32{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+        #s9{
+            position: relative;
+            top:-287px;
+        }
+        #t33{
+            width:25px;
+            height:25px;
+            background-image: url(71.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top:8px;
+            left:3px;
+
+        }
+        #t34{
+            width:234px;
+            height:25px;
+            position: absolute;
+            top:8px;
+            left:35px;
+
+
+        }
+        #t35{
+            width:70px;
+            height:25px;
+            font-size: 16px;
+        }
+        #t36{
+            width:20px;
+            height: 20px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            left:208px;
+            top:2px;
+        }
+
+        #fangbu{
+            width:270px;
+            height:332px;
+            overflow: scroll;
+
+
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #last{
+            width:270px;
+            height:50px;
+            background-color: white;
+            position: absolute;
+            top:395px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2px;
+            border-top: 1px solid gainsboro;
+        }
+        .end{
+            width:30px;
+            height:30px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        #l1{
+            background-image:url(05.png) ;
+            position: relative;
+        }
+
+
+        #l2{
+            background-image: url(06.png);
+
+        }
+        #l3{
+            background-image: url(07.png);
+        }
+        #l4{
+            background-image: url(21.png);
+            position: relative;
+        }
+        #l5{
+            width:8px;
+            height:8px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: red;
+            top:1px;
+            left:30px;
+
+        }
+        #l6{
+            width:17px;
+            height:17px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #F74C31;
+            top:-4px;
+            left:22px;
+            text-align: center;
+            line-height: 14px;
+            font-size: 1px;
+            color: white;
+        }
+        #xiaozi{
+            width:270px;
+            height:15px;
+            position: relative;
+            top:43px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .xiao5{
+            width:40px;
+            height:15px;
+            font-size: 8px;
+            text-align: center;
+            color: gray;
+
+        }
+        #xiao1{
+        }
+        #xiao2{
+        }
+        #xiao3{
+        }
+        #xiao4{
+        }
+
+    </style>
+</head>
+<body>
+<div class="start">
+    <div id="star">
+        <div id="jian">
+            <div id="first">
+                <div id="f1" class="">
+                    中国移动
+                    <div id="f2" class="">4G</div>
+                    <div id="x1"></div>
+                    <div id="x2"></div>
+                    <div id="x3"></div>
+                    <div id="x4"></div>
+
+                </div>
+
+                <div id="f3" class="">20:03</div>
+                <div id="f4">
+                    <div id="battary" >
+                        <div id="batta" class="charging"></div>
+                    </div>
+                    <div class="batt"></div>
+                </div>
+            </div>
+            <div id="second">
+                <div id="h1"></div>
+                <div id="h2">消息</div>
+                <div id="h3">更多</div>
+            </div>
+        </div>
+        <div id="fangbu">
+        <div id="fangbuxia">
+        <div id="sou">
+            <div id="sousuo">
+                <div id="wenzi">大家都在搜：英格兰申办世界杯</div>
+                <div id="tubiao"></div>
+            </div>
+            <div id="tu">
+                <a href="space.html"><div id="tu1">
+                    <div id="tu4"></div>
+                    <div id="quan"></div>
+                </div></a>
+                <div id="tu2"></div>
+                <div id="tu3"></div>
+                <div id="zi">
+                    <a href="space.html"> <div id="z1">好友动态</div></a>
+                    <div id="z2">兴趣部落</div>
+                    <div id="z3">附近</div>
+                </div>
+            </div>
+
+        </div>
+            <div id="kong"></div>
+        <div id="henduo">
+
+            <div id="s1" class="sub">
+                <div id="t1"></div>
+                <div id="t2">
+                    <div id="t3">游戏</div></div>
+                    <div id="t4"></div>
+                </div>
+            </div>
+            <div id="s2" class="sub">
+                <div id="t5"></div>
+                <div id="t6">
+                    <div id="t7">京东购物</div></div>
+                <div id="t8"></div>
+            </div>
+            </div>
+            <div id="s3" class="sub">
+                <div id="t9"></div>
+                <div id="t10">
+                    <div id="t11">企鹅电竞</div>
+                <div id="t12"></div>
+            </div>
+            </div>
+            <div id="s4" class="sub">
+                <div id="t13"></div>
+                <div id="t14">
+                    <div id="t15">鹅漫U品</div>
+                <div id="t16"></div>
+            </div>
+    </div>
+            <div id="s5" class="sub">
+                <div id="t17"></div>
+                <div id="t18">
+                    <div id="t19">动漫</div>
+                <div id="t20"></div>
+            </div>
+</div>
+            <div id="s6" class="sub">
+                <div id="t21"></div>
+                <div id="t22">
+                    <div id="t23">阅读</div>
+                <div id="t24"></div>
+            </div>
+</div>
+
+
+
+            <div id="s7" class="sub">
+                <div id="t25"></div>
+                <div id="t26">
+                    <div id="t27">音乐</div>
+                <div id="t28"></div>
+            </div>
+</div>
+
+            <div id="s8" class="sub">
+                <div id="t29"></div>
+                <div id="t30">
+                    <div id="t31">直播</div>
+                <div id="t32"></div>
+            </div>
+</div>
+
+            <div id="s9" class="sub">
+                <div id="t33"></div>
+                <div id="t34">
+                    <div id="t35">应用宝</div>
+                <div id="t36"></div>
+            </div>
+</div>
+        </div>
+
+        <div id="last">
+            <a href="connect.html"> <div id="l1" class="end">
+                <div id="l6">1</div>
+            </div></a>
+            <a href="connection.html"> <div id="l2" class="end"></div></a>
+            <div id="l3" class="end"></div>
+          <div id="l4" class="end">
+                <div id="l5"></div>
+           </div>
+        </div>
+        <ss id="xiaozi" >
+            <div id="xiao1" class="xiao5">消息</div>
+            <div id="xiao2" class="xiao5">联系人</div>
+            <div id="xiao3" class="xiao5">看点</div>
+            <div id="xiao4" class="xiao5">动态</div>
+        </div>
+
+</div>
+</body>
+</html>
