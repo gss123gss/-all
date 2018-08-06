@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*@keyframes charge {*/
+            /*0%{*/
+                /*background-color: red;*/
+                /*height:0px;*/
+            /*}*/
+            /*20%{*/
+                /*background-color:green;*/
+                /*height:11px;*/
+            /*}*/
+            /*80%{*/
+                /*background-color:gold;*/
+                /*height:17px;*/
+            /*}*/
+            /*100%{*/
+                /*background-color: yellow;*/
+                /*height:23px;*/
+            /*}*/
+        /*}*/
+        /*.charging{*/
+            /*animation: charge 4s linear infinite;*/
+
+        /*}*/
+        #star{
+            width:270px;
+            height:440px;
+
+            margin:0 auto;
+            position: relative;
+
+        }
+        #first{
+            width:270px;
+            height:30px;
+            /*background-color:#3EA1FD ;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #f1{
+            width:110px;
+            height:20px;
+
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+        #f2{
+            width:20px;
+            height:20px;
+
+            position: absolute;
+            right:4px;
+            top:0px;
+            font-size: 14px;
+            color: white;
+
+
+
+        }
+        #x1{
+            width:3px;
+            height:25%;
+            background-color: white;
+
+            position: absolute;
+            left:5px;
+            top:15px;
+        }
+        #x2{
+            width:3px;
+            height:50%;
+            background-color: white;
+            position: absolute;
+            left:10px;
+            top:10px;
+        }
+        #x3{
+            width:3px;
+            height:75%;
+            background-color: white;
+            position: absolute;
+            left:15px;
+            top:5px;
+        }
+        #x4{
+            width:3px;
+            height:100%;
+            background-color: gray;
+            position: absolute;
+            left:20px;
+            top:0px;
+        }
+        #f4{
+            width:60px;
+            height:20px;
+            position: absolute;
+            left:215px;
+
+        }
+        #battary{
+            width:12px;
+            height:23px;
+            background-color: white;
+            position: absolute;
+            right:15px;
+            top:0px;
+            display: flex;
+            flex-flow: column-reverse;
+            display: flex;
+            ;
+        }
+        #bb{
+            font-size: 10px;
+            color: white;
+            position: absolute;
+            right:15px;
+            top:-3px;
+        }
+        #batta{
+            width:10px;
+            height:15px;
+            position: absolute;
+            right:1px;
+            top:6px;
+            background-color: greenyellow;
+
+
+        }
+        .batt{
+            width:8px;
+            height:3px;
+            background-color: white;
+            position:absolute;
+            right:17px;
+            top:-2px;
+        }
+
+        #f3{
+            width:40px;
+            height:20px;
+
+            position: absolute;
+
+            left:120px;
+            color: white;
+
+        }
+        #second{
+            width:270px;
+            height:35px;
+            /*background-color:#3EA1FD;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #h1{
+            width:30px;
+            height:30px;
+
+            background-image: url(01.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+        #h2{
+            width:60px;
+            height:40px;
+
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: 微软雅黑;
+        }
+        #h3{
+            width:36px;
+            height:40px;
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: 微软雅黑;
+
+        }
+        #jian{
+            width:270px;
+            height:65px;
+            background: linear-gradient(#3075BD,#4196F5,#3FA1FE);
+        }
+        #firster{
+            width:270px;
+            height:40px;
+            background-color: white;;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid lightgray;
+
+        }
+        .sub{
+            width:45px;
+            height:30px;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            color: gray;
+
+        }
+        #a1:hover{
+            color: #3EA1FD;
+
+        }
+        #a2:hover{
+            color: #3EA1FD;
+
+        }
+        #a3:hover{
+            color: #3EA1FD;
+        }
+        #a4:hover{
+            color: #3EA1FD;
+        }
+        #a5:hover{
+            color: #3EA1FD;
+        }
+        #later{
+            width:270px;
+            height: 310px;
+
+        }
+        .gu{
+            width:270px;
+            height:40px;
+            margin-top: 4px;
+        }
+        .p{
+            width:15px;
+            height:15px;
+            position:absolute;
+            left:5px;
+        }
+        #c1{
+
+            position: relative;
+
+        }
+        #l{
+            position: absolute;
+            top:11px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #l1{
+            position: absolute;
+            top:7px;
+            left:25px;
+
+
+
+        }
+        #l2{
+            width:70px;
+            height:25px;
+        }
+        #l3{
+            width:45px;
+            height:25px;
+            font-size: 13px;
+            color: gray;
+            position: absolute;
+            left:202px;
+            top:1px;
+        }
+        #c2{
+
+            position: relative;
+        }
+        #y{
+            position: absolute;
+            top:11px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #y1{
+            position: relative;
+        }
+        #y2{
+            width:70px;
+            height:25px;
+            position: absolute;
+            left:25px;
+            top:8px;
+        }
+        #y3{
+            width:45px;
+            height:25px;
+            font-size: 13px;
+            color: gray;
+            position: absolute;
+            left:225px;
+            top:8px;
+        }
+        #c3{
+
+            position: relative;
+        }
+        #t{
+            position: absolute;
+            top:11px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #t1{
+           position: relative;
+        }
+        #t2{
+            width:70px;
+            height:25px;
+            position: absolute;
+            left:25px;
+            top:8px;
+
+        }
+        #t3{
+            width:45px;
+            height:25px;
+            position: absolute;
+            left:225px;
+            top:8px;
+            font-size: 13px;
+            color: gray;
+        }
+        #c4{
+
+            position: relative;
+        }
+        #r{
+            position: absolute;
+            top:11px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #r1{
+            position: relative;
+        }
+        #r2{
+            width:70px;
+            height:25px;
+            position: absolute;
+            left:25px;
+            top:8px;
+        }
+        #r3{
+            width:45px;
+            height:25px;
+            position: absolute;
+            left:225px;
+            top:8px;
+            font-size: 13px;
+            color: gray;
+        }
+        #c5{
+
+            position: relative;
+        }
+        #e{
+            position: absolute;
+            top:11px;
+            background-image: url(17.png);
+            background-size: cover;
+            background-position: center;
+        }
+        #e1{
+            position: relative;
+        }
+        #e2{
+            width:70px;
+            height:25px;
+            position: absolute;
+            left:25px;
+            top:8px;
+        }
+        #e3{
+            width:45px;
+            height:25px;
+            position: absolute;
+            left:225px;
+            top:8px;
+            font-size: 13px;
+            color: gray;
+        }
+
+
+
+        #ender{
+            width:270px;
+            height:50px;
+            background-color: white;
+            position: absolute;
+            top:395px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2px;
+            border-top: 1px solid gainsboro;
+        }
+        .end{
+            width:30px;
+            height:30px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        #o1{
+            background-image:url(05.png) ;
+            position: relative;
+        }
+
+
+        #o2{
+            background-image: url(19.png);
+
+        }
+        #o3{
+            background-image: url(07.png);
+        }
+        #o4{
+            background-image: url(20.png);
+            position: relative;
+        }
+        #l5{
+            width:8px;
+            height:8px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: red;
+            top:1px;
+            left:30px;
+
+        }
+        #l6{
+            width:17px;
+            height:17px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #F74C31;
+            top:-4px;
+            left:22px;
+            text-align: center;
+            line-height: 14px;
+            font-size: 1px;
+            color: white;
+        }
+        #xiaozi{
+            width:270px;
+            height:15px;
+            position: relative;
+            top:20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .xiao5{
+            width:40px;
+            height:15px;
+            font-size: 8px;
+            text-align: center;
+            color: gray;
+
+        }
+        #xiao1{
+        }
+        #xiao2{
+        }
+        #xiao3{
+        }
+        #xiao4{
+        }
+        .wer{
+            width:270px;
+            height:71px;
+            background-color: #F8F8FA;
+        }
+    </style>
+</head>
+<body>
+<div id="star">
+    <div id="jian">
+        <div id="first">
+            <div id="f1" class="">
+                中国移动
+                <div id="f2" class="">4G</div>
+                <div id="x1"></div>
+                <div id="x2"></div>
+                <div id="x3"></div>
+                <div id="x4"></div>
+
+            </div>
+
+            <div id="f3" class="">20:03</div>
+            <div id="f4">
+                <div id="battary" >
+                    <div id="batta" >
+                        <div id="bb">75%</div>
+                    </div>
+                </div>
+                <div class="batt"></div>
+            </div>
+        </div>
+        <div id="second">
+            <div id="h1"></div>
+            <div id="h2">联系人</div>
+            <div id="h3">添加</div>
+        </div>
+    </div>
+    <div id="firster">
+        <div id="a1" class="sub">好友</div>
+        <div id="a2" class="sub">群聊</div>
+        <div id="a3" class="sub">设备</div>
+        <div id="a4" class="sub">通讯录</div>
+        <div id="a5" class="sub">公众号</div>
+    </div>
+    <div id="later">
+        <div id="c1" class="gu">
+            <div id="l" class="p"></div>
+            <div id="l1" >
+                <div id="l2">特别关心</div>
+                <div id="l3">0/0</div>
+            </div>
+        </div>
+        <div id="c2" class="gu">
+            <div id="y" class="p"></div>
+            <div id="y1">
+                <div id="y2">家人</div>
+                <div id="y3">18/21</div>
+            </div>
+        </div>
+        <div id="c3" class="gu">
+            <div id="t" class="p"></div>
+            <div id="t1">
+                <div id="t2">朋友</div>
+                <div id="t3">43/79</div>
+            </div>
+        </div>
+        <div id="c4" class="gu">
+            <div id="r" class="p"></div>
+            <div id="r1">
+                <div id="r2">兄弟</div>
+                <div id="r3">8/17</div>
+            </div>
+        </div>
+        <div id="c5" class="gu">
+            <div id="e" class="p"></div>
+            <div id="e1">
+                <div id="e2">儿子</div>
+                <div id="e3">5/12</div>
+            </div>
+        </div>
+          <div class="wer"></div>
+
+    </div>
+    <div id="ender">
+
+        <a href="connect.html"> <div id="o1" class="end">
+                <div id="l6">1</div>
+            </div>
+        </a>
+            <div id="o2" class="end"></div>
+            <div id="o3" class="end"></div>
+        <a href="dynamic.html"> <div id="o4" class="end">
+                <div id="l5"></div>
+            </div>
+        </a>
+        </div>
+    <div id="xiaozi" >
+        <div id="xiao1" class="xiao5">消息</div>
+        <div id="xiao2" class="xiao5">联系人</div>
+        <div id="xiao3" class="xiao5">看点</div>
+        <div id="xiao4" class="xiao5">动态</div>
+    </div>
+
+</div>
+</body>
+</html>

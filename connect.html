@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style >
+        @keyframes charge {
+            0%{
+                background-color: red;
+                height:0px;
+            }
+            20%{
+                background-color:green;
+                height:11px;
+            }
+            80%{
+                background-color:gold;
+                height:17px;
+            }
+            100%{
+                background-color: yellow;
+                height:23px;
+            }
+        }
+        .charging{
+            animation: charge 4s linear infinite;
+
+        }
+        #star{
+            width:270px;
+            height:440px;
+            background-color: white;
+            margin:0 auto;
+            position: relative;
+        }
+        #yincang{
+            width:150px;
+            height:200px;
+            background-color: white;
+            position: absolute;
+            top:70px;
+            left:110px;
+            z-index: 5;
+           display: none;
+        }
+        .aa{
+            width:150px;
+            height:40px;
+            position: relative;
+        }
+        #chuangjian{
+
+
+        }
+        #tutu{
+            width:20px;
+            height:20px;
+            background-image: url(57.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:11px;
+            left:10px;
+        }
+        #tuzi{
+            width:100px;
+            height:25px;
+            position:absolute;
+            top:10px;
+            left:40px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #jiahaoyou{
+
+        }
+        #tutu1{
+            width:20px;
+            height:20px;
+            background-image: url(58.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:11px;
+            left:10px;
+        }
+        #tuzi1{
+            width:100px;
+            height:25px;
+            position:absolute;
+            top:10px;
+            left:40px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #saoyisao{
+
+        }
+        #tutu2{
+            width:20px;
+            height:20px;
+            background-image: url(59.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:11px;
+            left:10px;
+        }
+        #tuzi2{
+            width:100px;
+            height:25px;
+            position:absolute;
+            top:10px;
+            left:40px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #mianduimian{
+        }
+        #tutu3{
+            width:20px;
+            height:20px;
+            background-image: url(60.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:11px;
+            left:10px;
+        }
+        #tuzi3{
+            width:100px;
+            height:25px;
+            position:absolute;
+            top:10px;
+            left:40px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #shoukuan{
+        }
+        #tutu4{
+            width:20px;
+            height:20px;
+            background-image: url(61.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top:11px;
+            left:10px;
+        }
+        #tuzi4{
+            width:100px;
+            height:25px;
+            position:absolute;
+            top:10px;
+            left:40px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #first{
+            width:270px;
+            height:30px;
+            /*background-color:#3EA1FD ;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #f1{
+            width:110px;
+            height:20px;
+
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+        #f2{
+            width:20px;
+            height:20px;
+
+            position: absolute;
+            right:4px;
+            top:0px;
+            font-size: 14px;
+            color: white;
+
+
+
+        }
+        #x1{
+            width:3px;
+            height:25%;
+            background-color: white;
+
+            position: absolute;
+            left:5px;
+            top:15px;
+        }
+        #x2{
+            width:3px;
+            height:50%;
+            background-color: white;
+            position: absolute;
+            left:10px;
+            top:10px;
+        }
+        #x3{
+            width:3px;
+            height:75%;
+            background-color: white;
+            position: absolute;
+            left:15px;
+            top:5px;
+        }
+        #x4{
+            width:3px;
+            height:100%;
+            background-color: gray;
+            position: absolute;
+            left:20px;
+            top:0px;
+        }
+        #f4{
+            width:60px;
+            height:20px;
+            position: absolute;
+            left:215px;
+
+        }
+        #battary{
+            width:12px;
+            height:23px;
+            background-color: white;
+            position: absolute;
+            right:15px;
+            top:0px;
+            display: flex;
+            flex-flow: column-reverse wrap;
+        }
+        #batta{
+            width:10px;
+            height:21px;
+            position: absolute;
+            right:1px;
+            top:1px;
+            background-color: yellow;
+
+        }
+        .batt{
+            width:8px;
+            height:3px;
+            background-color: white;
+            position:absolute;
+            right:17px;
+            top:-2px;
+        }
+
+        #f3{
+            width:40px;
+            height:20px;
+
+            position: absolute;
+
+            left:120px;
+            color: white;
+
+        }
+
+        #second{
+            width:270px;
+            height:35px;
+            /*background-color:#3EA1FD;*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top:-35px;
+
+
+
+        }
+        #h1{
+            width:30px;
+            height:30px;
+
+            background-image: url(01.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+        #h2{
+            width:40px;
+            height:40px;
+
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: 黑体;
+        }
+        #h3{
+            width:30px;
+            height:30px;
+            background-image: url(02.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+        #jian{
+            width:270px;
+            height:65px;
+            background: linear-gradient(#3075BD,#4196F5,#3FA1FE);
+        }
+        #third{
+            width:270px;
+            height:25px;
+            background-color:#FFFFFF;
+            position: relative;
+            top:-60px;
+        }
+        #next{
+            width:270px;
+            height:300px;
+            /*background-color: green;*/
+            position: relative;
+            top:-35px;
+            overflow: scroll;
+        }
+        .star{
+            width:270px;
+            height:50px;
+        }
+        #t1{
+
+            position: relative;
+            border-bottom: 1px solid lightgray;
+        }
+        #p1{
+            width:40px;
+            height:40px;
+
+            border-radius: 50%;
+            position:absolute;
+            top:5px;
+            left:2px;
+            background-image: url(09.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #p2{
+            width:225px;
+            height:50px;
+
+            position: absolute;
+            left:45px;
+        }
+        #p3{
+            width:225px;
+            height:27px;
+            display: flex;
+            justify-content: space-between;
+           position: relative;
+        }
+        #q1 {
+            width:100px;
+            height:23px;
+            position:absolute;
+            top:5px;
+            font-size: 15px;
+            left:5px;
+
+        }
+        #q2 {
+            width:50px;
+            height:23px;
+            position: absolute;
+            top:5px;
+            right:0px;
+            font-size: 11px;
+            line-height: 20px;
+            color: gray;
+        }
+
+        #p4{
+            width:225px;
+            height:23px;
+            position: absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+        }
+        #p5{
+            width:17px;
+            height:17px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #F74C31;
+            top:0px;
+            left:185px;
+            text-align: center;
+            line-height: 16px;
+            font-size: 1px;
+            color: white;
+        }
+        #t2{
+
+            border-bottom: 1px solid lightgray;
+            position: relative;
+        }
+        #d1{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            position:absolute;
+            top:4px;
+            left:1px;
+            background-image: url(10.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #d2{
+            width:225px;
+            height:50px;
+
+            position: absolute;
+            left:45px;
+        }
+        #d3{
+            width:225px;
+            height:27px;
+
+        }
+        #r1 {
+            width:150px;
+            height:23px;
+            position:absolute;
+            top:5px;
+            font-size: 15px;
+            left:5px;
+
+        }
+        #r2 {
+            width:50px;
+            height:23px;
+            position: absolute;
+            top:5px;
+            right:5px;
+            font-size: 10px;
+            line-height: 20px;
+            color: gray;
+        }
+        #d4{
+            width:225px;
+            height:23px;
+            position: absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+
+        }
+        #t3{
+
+            border-bottom: 1px solid lightgray;
+            position: relative;
+        }
+        #s1{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            position:absolute;
+            top:4px;
+            left:1px;
+            background-image: url(15.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #s2{
+            width:225px;
+            height:50px;
+            position: absolute;
+            left:45px;
+        }
+        #s3{
+            width:225px;
+            height:27px;
+        }
+        #w1 {
+            width:50px;
+            height:23px;
+            position:absolute;
+            top:5px;
+            font-size: 15px;
+            left:5px;
+
+        }
+        #w2 {
+            width:50px;
+            height:23px;
+            position: absolute;
+            top:5px;
+            right:0px;
+            font-size: 8px;
+            line-height: 20px;
+            color: gray;
+        }
+        #s4{
+            width:225px;
+            height:23px;
+           position:absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+        }
+
+        #t4{
+
+            border-bottom: 1px solid lightgray;
+            position: relative;
+        }
+        #e1{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            position:absolute;
+            top:4px;
+            left:1px;
+            background-image: url(16.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #e2{
+            width:225px;
+            height:50px;
+            position: absolute;
+            left:45px;
+        }
+        #e3{
+            width:225px;
+            height:27px;
+        }
+        #z1 {
+            width:150px;
+            height:23px;
+            position:absolute;
+            top:5px;
+            font-size: 15px;
+            left:5px;
+
+        }
+        #z2 {
+            width:50px;
+            height:23px;
+            position: absolute;
+            top:5px;
+            right:-15px;
+            font-size: 11px;
+            line-height: 20px;
+            color: gray;
+        }
+        #e4{
+            width:225px;
+            height:23px;
+          position: absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+        }
+        #t5{
+
+            border-bottom: 1px solid lightgray;
+            position: relative;
+        }
+        #c1{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            position:absolute;
+            top:4px;
+            left:1px;
+            background-image: url(13.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #c2{
+            width:225px;
+            height:50px;
+
+            position: absolute;
+            left:45px;
+        }
+        #c3{
+            width:225px;
+            height:27px;
+
+        }
+        #g1 {
+            width:50px;
+            height:23px;
+            position:absolute;
+            top:5px;
+            font-size: 15px;
+            left:5px;
+
+        }
+        #g2 {
+            width:50px;
+            height:23px;
+            position: absolute;
+            top:5px;
+            right:-7px;
+            font-size: 11px;
+            line-height: 20px;
+            color: gray;
+        }
+        #c4{
+            width:225px;
+            height:23px;
+            position: absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+        }
+        #t6{
+
+            border-bottom: 1px solid lightgray;
+            position: relative;
+        }
+        #a1{
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            position:absolute;
+            top:4px;
+            left:1px;
+            background-image: url(14.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #a2{
+            width:225px;
+            height:50px;
+
+            position: absolute;
+            left:45px;
+        }
+        #a3{
+            width:225px;
+            height:27px;
+        }
+        #i7{
+            border-bottom: 1px solid lightgray;
+            position: relative;
+        }
+        #i1{
+            width:40px;
+            height:40px;
+
+            border-radius: 50%;
+            position:absolute;
+            top:5px;
+            left:2px;
+            background-image: url(09.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #i2{
+            width:225px;
+            height:50px;
+
+            position: absolute;
+            left:45px;
+        }
+        #i3{
+            width:225px;
+            height:27px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        #n1 {
+            width:100px;
+            height:23px;
+            position:absolute;
+            top:2px;
+            font-size: 16px;
+            left:5px;
+
+        }
+        #n2 {
+            width:70px;
+            height:23px;
+            position: absolute;
+            top:2px;
+            right:0px;
+            font-size: 11px;
+            line-height: 20px;
+            color: gray;
+        }
+
+        #i4{
+            width:225px;
+            height:23px;
+            position: absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+        }
+        #o1 {
+            width:150px;
+            height:23px;
+            position:absolute;
+            top:5px;
+            font-size: 15px;
+            left:5px;
+
+        }
+        #o2 {
+            width:93px;
+            height:23px;
+            position: absolute;
+            top:5px;
+            right:-23px;
+            font-size: 11px;
+            line-height: 20px;
+            color: gray;
+        }
+        #a4{
+            width:225px;
+            height:23px;
+            position: absolute;
+            left:5px;
+            font-size: 8px;
+            color:gray;
+
+        }
+
+        #last{
+            width:270px;
+            height:50px;
+            background-color: white;
+            position: absolute;
+            top:395px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2px;
+            border-top: 1px solid gainsboro;
+        }
+        .end{
+                 width:30px;
+            height:30px;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+
+        #l1{
+            background-image:url(18.png) ;
+            position: relative;
+        }
+
+
+        #l2{
+            background-image: url(06.png);
+
+        }
+        #l3{
+            background-image: url(07.png);
+        }
+        #l4{
+            background-image: url(20.png);
+            position: relative;
+        }
+        #l5{
+            width:8px;
+            height:8px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: red;
+            top:0px;
+            left:30px;
+
+        }
+        #l6{
+            width:17px;
+            height:17px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: #F74C31;
+            top:-4px;
+            left:22px;
+            text-align: center;
+            line-height: 14px;
+            font-size: 1px;
+            color: white;
+        }
+        #xiaozi{
+            width:270px;
+            height:15px;
+            position: relative;
+            top:-340px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .xiao5{
+            width:40px;
+            height:15px;
+            font-size: 8px;
+            text-align: center;
+            color: gray;
+
+        }
+        #xiao1{
+        }
+        #xiao2{
+        }
+        #xiao3{
+        }
+        #xiao4{
+        }
+        .in{
+            border-radius: 5%;
+            position: absolute;
+            left:4px;
+            top:69px;
+            width:95%;
+            background-color:#F3F3F3;
+            text-align: center;
+            border:none;
+        }
+        /*#fangbu{*/
+            /*width:270px;*/
+            /*height:330px;*/
+            /*overflow: scroll;*/
+        /*}*/
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        #fangbuxia{
+
+            width:270px;
+            height:680px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="star">
+
+    <div id="jian">
+
+    <div id="first">
+
+        <div id="f1" class="">
+            中国移动
+            <div id="f2" class="">4G</div>
+            <div id="x1"></div>
+            <div id="x2"></div>
+            <div id="x3"></div>
+            <div id="x4"></div>
+
+        </div>
+
+        <div id="f3" class="">20:03</div>
+        <div id="f4">
+            <div id="battary" >
+                <div id="batta" class="charging"></div>
+            </div>
+            <div class="batt"></div>
+        </div>
+    </div>
+        <div id="yincang">
+            <div id="chuangjian" class="aa">
+                <div id="tutu"></div>
+                <div id="tuzi">创建群聊</div>
+            </div>
+            <div id="jiahaoyou" class="aa">
+                <div id="tutu1"></div>
+                <div id="tuzi1">加好友/群</div>
+            </div>
+            <div id="saoyisao" class="aa">
+                <div id="tutu2"></div>
+                <div id="tuzi2">扫一扫</div>
+            </div>
+            <div id="mianduimian" class="aa">
+                <div id="tutu3"></div>
+                <div id="tuzi3">面对面快传</div>
+            </div>
+            <div id="shoukuan" class="aa">
+                <div id="tutu4"></div>
+                <div id="tuzi4">收付款</div>
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div id="h1"></div>
+        <div id="h2">消息</div>
+        <div id="h3"></div>
+    </div>
+    <!--<div id="fangbu">-->
+    <div id="fangbuxia">
+        <div id="next">
+    <div id="third">
+        <form>
+            <input class="in" type="text" placeholder="搜索" >
+        </form>
+
+    </div>
+
+
+
+            <div id="t1" class="star">
+                <div id="p1"></div>
+                <div id="p2">
+                    <div id="p3">
+                        <div id="q1">小明</div>
+                        <div id="q2">8:05AM</div>
+                    </div>
+                    <div id="p4">你干嘛呢？
+                    <div id="p5">1</div></div>
+                </div>
+
+            </div>
+            <div id="t2"  class="star">
+                <div id="d1"></div>
+                <div id="d2">
+                    <div id="d3">
+                        <div id="r1">山大2018东软睿道</div>
+                        <div id="r2">11:25AM</div>
+                    </div>
+                    <div id="d4">东软武哥哥：我最帅</div>
+                </div>
+            </div>
+            <div id="t3" class="star">
+                <div id="s1"></div>
+                <div id="s2">
+                    <div id="s3">
+                        <div id="w1">小芳</div>
+                        <div id="w2">5:15PM</div>
+                    </div>
+                    <div id="s4">[语音]</div>
+                </div>
+            </div>
+            <div id="t4" class="star">
+                <div id="e1"></div>
+                <div id="e2">
+                    <div id="e3">
+                        <div id="z1">QQ邮箱提醒</div>
+                        <div id="z2">昨天</div>
+                    </div>
+                    <div id="e4">iRecruit：感谢您申请我公司职位</div>
+                </div>
+            </div>
+            <div id="t5" class="star">
+                <div id="c1"></div>
+                <div id="c2">
+                    <div id="c3">
+                        <div id="g1">小胖</div>
+                        <div id="g2">星期日</div>
+                    </div>
+                    <div id="c4">那家的炒饭很好吃</div>
+                </div>
+            </div>
+
+            <div id="t6" class="star">
+                <div id="a1"></div>
+                <div id="a2">
+                    <div id="a3">
+                        <div id="o1">崔宏耀</div>
+                        <div id="o2">2018-07-25</div>
+                    </div>
+                    <div id="a4">[图片]</div>
+                </div>
+            </div>
+            <div id="i7" class="star">
+                <div id="i1"></div>
+                <div id="i2">
+                    <div id="i3">
+                        <div id="n1">帅帅</div>
+                        <div id="n2">2018-07-24</div>
+                    </div>
+                    <div id="i4">好吧</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--</div>-->
+    <div id="last">
+       <div id="l1" class="end" >
+            <div id="l6">1</div>
+        </div>
+
+        <a href="connection.html"><div id="l2" class="end" ></div></a>
+        <div id="l3" class="end" ></div>
+        <a href="dynamic.html"><div id="l4" class="end">
+            <div id="l5"></div>
+        </div>
+        </a>
+
+    </div>
+    <div id="xiaozi" >
+        <div id="xiao1" class="xiao5">消息</div>
+        <div id="xiao2" class="xiao5">联系人</div>
+        <div id="xiao3" class="xiao5">看点</div>
+        <div id="xiao4" class="xiao5">动态</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script src="js.js"></script>
+<script src="../JS/qiehuan.js"></script>
